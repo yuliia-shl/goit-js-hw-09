@@ -75,7 +75,7 @@ galleryEl.insertAdjacentHTML("beforeend", generateGalleryList(images));
 function generateGalleryList(images) {
     return images
     .map(({ preview, original, description }) =>
-        `<li class="gallery-item js-image-item">
+        `<li class="gallery-item">
             <a class="gallery-link" href="${original}">
                 <img
                     class="gallery-image"
